@@ -39,6 +39,12 @@ CREATE TABLE client_email (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
+
+SELECT Vend_id, Vend_nm, Vend_rcvr_cd, Vend_fsrv_nm, Vend_fsrv_ip
+FROM VENDOR
+WHERE VEND_ACTV_CD = 1 and Vend_file_IO = 'XML'
+
  
 
 
